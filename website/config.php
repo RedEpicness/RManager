@@ -1,4 +1,5 @@
-/*
+<?php
+/**
  *    Copyright 2017 Miha Mitič
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,30 +15,7 @@
  *    limitations under the License.
  */
 
-package me.redepicness.rmanager.common.util;
-
-/**
- * @author Red_Epicness
- * @since 5/21/2017 @ 01:10 AM
- */
-public class Capsule<T> {
-
-    private T object;
-
-    public Capsule() {
-        this(null);
-    }
-
-    public Capsule(T object) {
-        this.object = object;
-    }
-
-    public T get() {
-        return object;
-    }
-
-    public void set(T object) {
-        this.object = object;
-    }
-
-}
+define('RMANAGER_REDIS_HOST', 'localhost');
+    define('RMANAGER_REDIS_PORT', 6379);
+    define('RMANAGER_REDIS_PASSWORD', 'password');
+    define('RMANAGER_REDIS_DATABASE_ID', 0);

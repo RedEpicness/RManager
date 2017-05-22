@@ -1,4 +1,5 @@
-/*
+<?php
+    /**
  *    Copyright 2017 Miha Mitič
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,31 +14,10 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
+    include_once 'utils.php';
 
-package me.redepicness.rmanager.common.util;
-
-/**
- * @author Red_Epicness
- * @since 5/21/2017 @ 01:10 AM
- */
-public class Capsule<T> {
-
-    private T object;
-
-    public Capsule() {
-        this(null);
-    }
-
-    public Capsule(T object) {
-        this.object = object;
-    }
-
-    public T get() {
-        return object;
-    }
-
-    public void set(T object) {
-        this.object = object;
-    }
-
-}
+    $redis = getRedis();
+    $status = $redis -> get('rmanager:servers:online:test123');
+    if ($status) {
+        echo $status;
+    } else echo "Server offline!";

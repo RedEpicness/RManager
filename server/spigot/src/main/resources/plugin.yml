@@ -1,0 +1,7 @@
+name: RManager
+version: 1.0
+main: me.redepicness.rmanager.spigot.Main
+load: STARTUP
+author: Miha Mitič
+description: "This plugin is part of RManager."
+website: http://redepicness.me

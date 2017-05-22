@@ -23,7 +23,7 @@ import java.util.function.Supplier;
 
 /**
  * @author Red_Epicness
- * @since 1/21/2017 @ 12:05 AM
+ * @since 5/21/2017 @ 01:10 AM
  */
 public class LiveField<T> {
 

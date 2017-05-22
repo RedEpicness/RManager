@@ -19,7 +19,8 @@ package me.redepicness.rmanager.common;
 import java.io.Serializable;
 
 /**
- * Created by Red_Epicness on 7/29/2016 at 3:36 AM.
+ * @author Red_Epicness
+ * @since 5/21/2017 @ 01:10 AM
  */
 public enum Rank implements Serializable {
 
@@ -97,4 +98,8 @@ public enum Rank implements Serializable {
         return Database.getSyncCommands().hgetall(DBKey.resolve("rank", name, "options"));
     }*/
 
+/**
+ * @author Red_Epicness
+ * @since 7/29/2016 at 3:36 AM @ 1:06 AM
+ */
 }

@@ -25,11 +25,11 @@ import java.util.Map;
 
 /**
  * @author Red_Epicness
- * @since 1/20/2017 @ 11:56 PM
+ * @since 5/21/2017 @ 01:10 AM
  */
 public class ServerManager {
 
-    public static final DBKey SERVERS_KEY = DBKey.get("servers");
+    public static final DBKey SERVERS_KEY = Database.ROOT_KEY.cloneAdd("servers");
     public static final DBKey ONLINE_SERVERS_KEY = SERVERS_KEY.cloneAdd("online");
     public static final DBKey STATIC_SERVERS_KEY = SERVERS_KEY.cloneAdd("static");
 

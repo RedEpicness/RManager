@@ -27,7 +27,7 @@ import java.util.stream.Stream;
 
 /**
  * @author Red_Epicness
- * @since 2/14/2017 @ 8:23 AM
+ * @since 5/21/2017 @ 01:10 AM
  */
 public class CoreUtil {
 

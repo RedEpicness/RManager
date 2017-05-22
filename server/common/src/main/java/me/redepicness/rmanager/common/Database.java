@@ -27,11 +27,13 @@ import java.util.LinkedList;
 import java.util.stream.Collectors;
 
 /**
- * Created by Red_Epicness on 7/28/2016 at 1:50 PM.
+ * @author Red_Epicness
+ * @since 5/21/2017 @ 01:10 AM
  */
 public class Database {
 
     // static
+    public static final DBKey ROOT_KEY = DBKey.get("rmanager");
 
     private static Database instance = null;
 
