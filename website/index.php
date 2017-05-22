@@ -52,8 +52,8 @@
     <body>
         Welcome on the RManager website, not much to see here yet.
         <br>
-        <label for='refreshRate'></label>
-        <input id='refreshRate' type='number' value='1000'>
+        <label for='refreshRate'>Refresh rate:</label>
+        <input id='refreshRate' type='number' value='1000' maxlength='6'>ms
 
         <br>
         <div id='refresh'></div>

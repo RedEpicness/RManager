@@ -19,5 +19,11 @@
     $redis = getRedis();
     $status = $redis -> get('rmanager:servers:online:test123');
     if ($status) {
-        echo $status;
-    } else echo "Server offline!";
+        $status = json_decode($status);
+
+        echo 'ONLINE - ' . $status -> player_count . '/' . $status -> max_players;
+        echo '<br>';
+        echo 'Tps: ' . $status -> tps;
+        echo "<br>";
+        echo 'Online players: ' . implode(", ", $status -> players);
+    } else echo "OFFLINE";
